@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.Parallax {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Beauty {
+    position: absolute;
+    font-size: 5rem;
+    color:black;
+    text-shadow: 4px 2px 10px white;
+}
+
+.Parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.Parallax img#gate-lf {
+    transform: translateX(-283px);
+}
+
+.Parallax img#gate-rg {
+    transform: translateX(305px);
+}
+
+.otherment {
+    position: relative;
+    background-color: #020912;
+    margin-top: 50px
+}
+
+.otherment h1 {
+    font-size: 3em;
+    color: white;
+    margin-left: 27%;
+}
+
+.otherment p {
+    font-size: 1.3em;
+    color: white;
+    padding: 10px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.CompanyName {
+    font-size: 2rem;
+    color:aliceblue;
+    user-select: none;
+    display: flex;
+    font-family: 'Rubik Scribble';
+}
+
+.headerNavi {
+    font-size: 1.2rem;
+    color:aliceblue;
+    font-weight: 600;
+    user-select: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    display: flex;
+    flex-direction: unset;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.tooltip {
+    position: relative;
+  }
+  
+.Main {
+    font-size: 20px;
+    border: solid #020912;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+  }
+.Main:hover {
+    background-color: #020912;
+    cursor: pointer;
+  }
+  
+.tooltip__txt {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+    left: calc(55% + 5px);
+    z-index: 3;
+    padding: 20px;
+    width: max-content;
+    max-width: 300px;
+    box-shadow: 0 0 29px rgb(0 0 0 32%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #fff;
+    background: #222;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity .3s ease-in-out,transform .3s ease-in-out,visibility .3s ease-in-out;
+    border-radius: 40px;
+  }
+  
+.Main:hover + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+.Main:focus + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+.Tips {
+    font-size: 20px;
+    border: solid #020912;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+  }
+.Tips:hover {
+    background-color: #020912;
+    cursor: pointer;
+  }
+
+.Tips:hover + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+.Tips:focus + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+.Interesting {
+    font-size: 20px;
+    border: solid #020912;
+    border-radius: 20px;
+    width: 135px;
+    height: 30px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+  }
+.Interesting:hover {
+    background-color: #020912;
+    cursor: pointer;
+  }
+
+.Interesting:hover + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+.Interesting:focus + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+.Contact {
+    font-size: 20px;
+    border: solid #020912;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+  }
+.Contact:hover {
+    background-color: #020912;
+    cursor: pointer;
+  }
+
+.Contact:hover + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+.Contact:focus + .tooltip__txt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+.textR {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: -2px
+}
+.textQ {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: -2px;
+}
+.textW {
+    font-size: 20px;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+.textE {
+    font-size: 20px;
+    margin-left: 4px;
+    margin-top: -2px;
+}
+
+.Fascinating {
+    width: 100%;
+    height: 700px;
+    background-color: #020912;
+    padding-top: 190px;
+}
+.Laptop {
+    position: absolute;
+    background-image: url('Laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75%;
+    height: 420px;
+    margin-left: 200px;
+}
+
+.LaptopText {
+    color:azure;
+    font-size: 2rem;
+    position: relative;
+    margin-left: 40%;
+    color: yellow;
+}
+
+.Facts {
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: unset;
+    font-size: 1.12rem;
+    color:aqua;
+    padding-left: 15px;
+}
+
+/* .Fact {
+    width: 900px;
+    height: 90px;
+    display: flex;
+    flex-direction: unset;
+    font-size: 1.12rem;
+    color: red;
+    padding-left: 15px;
+} */
+
+.Fact {
+    width: 900px;
+    height: 90px;
+    display: flex;
+    flex-direction: unset;
+    font-size: 1.12rem;
+    color: red;
+    padding-left: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    animation: rainbow 5s infinite; 
+}
+  
+  @keyframes rainbow{
+    0%{color: orange;}  
+    10%{color: purple;} 
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+  }
+
+  .Facts {
+    width: 900px;
+    height: 90px;
+    display: flex;
+    flex-direction: unset;
+    font-size: 1.12rem;
+    color: red;
+    padding-left: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    animation: rainbow 5s infinite; 
+}
+
+.ClickClack {
+  padding-top: 50px;
+  width: 100%;
+  height: 700px;
+  background-color: #020912;
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+}
+
+.NewPicture {
+  margin-left: 10%;
+  width: 20%;
+  height: 550px;
+  background-color: aqua;
+  border: solid white;
+  border-radius: 10px;
+}
+
+.textbox {
+  background-image: url('BillG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  padding-left: 27%;
+  font-size: 2rem;
+  color: red;
+}
+
+.box-claim {
+  font-size: 22px;
+}
+
+.ClickClack2 {
+  padding-top: 50px;
+  width: 100%;
+  height: 700px;
+  background-color: #020912;
+}
+
+.NewPicture2 {
+  margin-right: 10%;
+  width: 20%;
+  height: 550px;
+  background-color: red;
+  border: solid white;
+  border-radius: 10px;
+}
+
+.textbox2 {
+  background-image: url('qwerty.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  padding-left: 27%;
+  font-size: 2rem;
+  color: aqua;
+}
+
+.box-claim2 {
+  font-size: 22px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #020912;
+  border: solid white ;
+  border-radius: 20px;
+}
+.widthfooter {
+  padding-top: 2%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  color: white;
+}
+
+.footer-button {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+}
+
+.Contactus {
+  padding-left: 90%;
+  margin-top: -0.7%;
+  font-family: 'Rubik Scribble', cursive;
+  font-size: 32px;
+}
